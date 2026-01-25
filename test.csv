@@ -1,0 +1,224 @@
+date,ticker,headline,sent_score,next_day_return
+2015-02-25,HUM,Health Insurers Flock to 52-Week Highs on CMS Proposal - Analyst Blog,-0.8195376992225647,-0.012214923317218962
+2018-08-03,GLTR,"Commodities Recap For The Week Of Aug. 3, 2018",0.8471572995185852,-0.006235236449837256
+2018-02-08,MAB,"Francisco García Paramés Buys Israel Chemicals, Petrofac, Tecnicas Reunidas SA, Sells Aryzta ...",0.8005141615867615,3.919140419528233e-05
+2015-05-04,DBE,Rebound Revisited: 'New Normal' Undercuts Expectations,-0.28220802545547485,0.011092566142032911
+2018-10-18,EWW,A View From Mexico On A New North American Trade Pact,0.5418318510055542,0.0023147804256653526
+2013-08-22,TX,AK Steel in Environmental Deal - Analyst Blog,0.8527991771697998,0.03493118589818511
+2015-02-10,HIG,Top 10 Net Payout Yield Stocks For February 2015,0.894901692867279,-0.0009851402479000848
+2015-05-22,ATNM,"Next Week In Biotech: Salix/Valeant PDUFA, ASCO, Brain Tumor Summit",0.8489659428596497,0.2941176574114863
+2013-09-12,TRIP,"Stocks Off To Shaky Start; TripAdvisor, NetEase Top IBD 50",-0.2790296971797943,-0.02241914732054373
+2016-06-22,XPO,FedEx Results Signal More Scrutiny Required For LTL Market,0.46957963705062866,0.054154403811742746
+2015-04-06,FLO,McCormick (MKC) Adds New Flavor Products to its Portfolio - Analyst Blog,-0.047848016023635864,-0.014181500845644734
+2016-11-14,IVZ,Another big session for financials,0.36785948276519775,0.010635349047381615
+2019-12-03,FXA,U.S. Brandishes Tariff Weapon And Weakens Animal Spirits,0.030682429671287537,0.001607398832141449
+2019-02-19,OMI,Notable earnings before Wednesday's open,-0.7724141478538513,-0.17506285106321684
+2018-06-26,WSM,Dividend Sensei's Portfolio Update 40: How Dividend Stocks Could Save You A Fortune During The Next Market Crash,0.8365315198898315,-0.01256464703806115
+2019-04-12,BZQ,Weekly ETF Gainers / Losers (04/12/19),0.7706087827682495,-0.013814176437937808
+2019-03-27,MFM,Muni Bond Math: A Tax Time Refresher,0.8025007247924805,0.0028940524286924507
+2018-11-14,MARK,"Remark Media (MARK) Reports Q3 Loss, Misses Revenue Estimates",0.019844282418489456,-0.40243899886059176
+2019-05-16,PBYI,Puma's Nerlynx edges out Novartis' Tykerb in late-stage breast cancer study,-0.5720311999320984,-0.01718003688369496
+2017-06-21,VEEV,Futures: These 2 Big Breakouts Highlight New Market Leadership,0.2377023994922638,0.010256400224333495
+2020-02-18,DQ,"Israel Chemicals (ICL) Q4 Earnings In Line, Revenues Down Y/Y",-0.010554660111665726,0.055178057661654734
+2018-10-17,GBNK,"Guaranty Bancorp beats by $0.03, misses on revenue",-0.628886342048645,-0.0355896582802272
+2019-09-04,TSN,Building A Bulletproof Portfolio Around Micron,0.7417429089546204,-0.009295905914718738
+2013-02-19,EPAM,"EPAM Systems Inc (EPAM) CEO, President, Chairman, 10% Owner Arkadiy Dobkin sells 5,937 Shares",0.9271535277366638,-0.006685830631635747
+2018-08-17,DHI,Housing Starts and Building Permits Rebound in July: 5 Picks,-0.2548242509365082,0.009238660334680793
+2015-07-31,MT,ArcelorMittal misses on revenue,0.05303943157196045,-0.008869302290606451
+2018-06-25,AMT,Honeywell International: Buy For Good Total Return And Steady Dividend Increases,-0.8568363785743713,0.007175327447308977
+2019-06-26,MSCI,Should You Invest in the Invesco S&P 500 Equal Weight Financials ETF (RYF)?,0.8332797288894653,0.011143637200778045
+2013-04-17,CCJ,Rio Witnesses Enhanced Y/Y Volume - Analyst Blog,-0.2125365138053894,0.0050933271471043096
+2018-06-06,LUV,Airline sector follows Delta lower,0.9043831825256348,-0.00216773488279165
+2019-11-20,BAK,Former Braskem CEO arrested on U.S. corruption charges,0.1637529581785202,-0.02022480673335747
+2014-03-10,FMC,Auto batteries lift FMC spinoff,0.5109010338783264,-0.023586094434336236
+2020-02-24,AG,Global Distribution Solid State Transformer Market is expected to grow USD ——9. ...,-0.8913130760192871,-0.047910356738968374
+2018-07-17,FCA,China Slowdown Reflects Structural Change,0.3530326783657074,-0.009852453736972744
+2018-02-07,TECS,Tech And Taxes - Feria Investor's Hector Andres Pacheco's Idea Of The Month,0.8253173828125,0.1230770356290829
+2014-06-20,LOPE,For-Profit Colleges In White House Crosshairs,0.8267163038253784,-0.006930901180746796
+2015-07-22,ALLY,54 House Dems Buck Obama Admin On Auto Loan Bias Suits,0.8201346397399902,-0.012791977540647537
+2016-09-01,EGP,Eastgroup Properties declares $0.62 dividend,0.8937139511108398,0.013985355856946713
+2020-03-25,INO,Novavax Rallies as Influenza Vaccine Meets All Goals in Study,-0.8863891959190369,0.07035927060859648
+2012-04-02,ESRX,Management Churn at CVS Caremark - Analyst Blog,0.7790033221244812,0.03909906610712266
+2018-07-18,LPX,"Zacks.com featured highlights include: Integer Holdings, Louisiana-Pacific, Knight-Swift, Herc and Eaton",0.8943620920181274,0.010207727337388395
+2019-12-18,DKS,Ross Stores Gains 38% YTD: Will Momentum Continue in 2020?,-0.6818237900733948,-0.0021088379428095827
+2016-01-15,FCG,Weekly ETF Gainers / Losers,0.6168135404586792,-0.08620686710695558
+2015-09-04,EA,"Activision-Blizzard: Up 40%, Where Do We Go From Here?",0.4932671785354614,0.032092781630568945
+2019-10-16,BK,"Lackluster Results At Wells Fargo, But Likely Past The Bottom In Sentiment",-0.034155070781707764,-0.0013497823187319513
+2019-10-25,AOS,A. O. Smith (AOS) to Report Q3 Earnings: What's in Store?,0.871259331703186,0.00548274474484689
+2018-08-30,EZA,Measuring Emerging Market Potential Using Implied Vol,0.8459106683731079,0.010683476291042604
+2015-10-15,HMY,Will These Factors Tarnish the Gold Mining Industry?,0.14438128471374512,-0.036144519716957535
+2020-05-06,SLV,"Matrix Trust Co Buys VanEck Vectors Fallen Angel High Yield Bond ETF, Vanguard Total Stock ...",0.6196359395980835,0.024425298184223232
+2014-01-23,CVM,"TNI Biotech is Waking Up. There's Bound to Be a Reason. (CVM, AMGN, TNIB)",0.8270585536956787,-0.07758620689655171
+2015-01-23,FXP,Shorting China Based On GDP Growth Rate Projections Is Highly Risky,0.875327467918396,0.0002637691319731239
+2018-02-23,MIDD,Middleby: Will Minimum Wages Fuel Growth?,0.5817418098449707,-0.024413834241061805
+2019-11-19,WPP,Imperial Yield And WPP Gain Top Mid-November International Aristocrat Dogs,0.5502891540527344,-0.013921719535006094
+2018-02-01,ETN,"Eaton (ETN) Tops Q4 Earnings Estimates, Issues 2018 Guidance",-0.7382043600082397,-0.031527315305155734
+2018-08-06,ACM,"Jacobs Engineering +7% after strong earnings, sales and guidance",-0.9239329099655151,-0.03380934180351636
+2013-08-19,BIO,"Bio-Rad Lags Q2 Earnings, Tops Revenues - Analyst Blog",-0.014721013605594635,-0.005280149266357892
+2020-03-23,HIW,This is Why Highwoods Properties (HIW) is a Great Dividend Stock,0.6237873435020447,0.057152635746741565
+2019-10-28,MPWR,ClearBridge Small Cap Growth Strategy Portfolio Manager Commentary Q3 2019,0.9028567671775818,-0.010525856348825746
+2015-01-07,CVBF,The Best Small-Cap Dividend Growers: PacWest Bancorp,-0.26515865325927734,0.02304167617744146
+2016-09-08,THR,Bespoke's Country Trading Range Screen,0.8862617015838623,-0.05642133852618636
+2017-09-22,DOX,"Amdocs (DOX) Maintains Core Business Focus, Risks Remain",0.8112812042236328,0.0029612749865697285
+2015-11-19,EQIX,Tracking Glenn Greenberg's Brave Warrior Advisors Portfolio - Q3 2015 Update,0.9095192551612854,0.04365404471088441
+2017-09-19,HOMB,6 Stocks With Strong Book Values,-0.6802133917808533,0.03276517207686469
+2019-08-01,AR,Antero Resources Corporation 2019 Q2 - Results - Earnings Call Slides,0.8005365133285522,0.031042097423641613
+2017-06-19,MAR,5 Reasons that Make Marriott (MAR) a Compelling Stock to Buy,0.6942803263664246,-0.016425832158142084
+2018-07-10,NXST,Nexstar Media Is A Buy,0.9203470349311829,0.03713203144260868
+2017-06-14,REGN,"Zacks.com featured highlights: Regeneron Pharmaceuticals, Raymond James Financial, Dollar General, Xcel Energy and Morgan Stanley",0.9213398694992065,-0.015392969597871509
+2018-11-09,STRS,Stratus Properties reports Q3 results,0.902290403842926,-0.05302226039539304
+2015-09-28,EGRX,The Vetr community has upgraded $EGRX to 5-Stars.,-0.8921282291412354,0.04233102700344804
+2013-01-02,ASGN,On Assignment Is Drawing A+ Fund Support; In Buy Zone,-0.2773917019367218,0.011818192221901613
+2014-05-19,GOGO,"Ventrus Biosciences (VTUS) Merger to Create a Robust Biopharmaceutical Company, Gogo Inc. (GOGO) Upgraded",-0.6704440116882324,0.0020718706901887707
+2018-11-09,IYZ,Beating The Market With ETF Rotation Systems,-0.3226853907108307,-0.020811831213184417
+2018-11-02,MTH,"With Rising Mortgage Rates, Is Lennar Homes A Buy?",0.7989872097969055,0.011536523436698864
+2017-03-10,AZO,Debunking The Concept Of Mr. Market,0.8557555675506592,0.016066214838157178
+2018-09-11,MTSI,Semtech Outperforming As The Pieces Come Together,-0.5725781321525574,-0.11828937377699289
+2015-07-10,LOCO,Higher guest spending boosts restaurants in Q2,-0.927608072757721,0.03713126186494442
+2016-09-02,LNCE,PepsiCo: How About Snyder's Lance,0.895893394947052,0.011299335175979586
+2019-07-30,AWK,"The Zacks Analyst Blog Highlights: Atlantic Power, American Water Works, KB Home and Unitil",0.9214407801628113,-0.0028668174769160837
+2016-11-10,PRU,"InsiderInsights.com Daily Round Up 11/9/16: Triumph, Gogo, CB Richard Ellis Group, Tronc",0.872064471244812,0.0019442512728564676
+2018-11-20,ILMN,Medtronic (MDT) Tops Q2 Earnings on Strong Segmental Growth,-0.9331506490707397,0.0292281884754213
+2018-08-13,BCO,Brink's Completes Acquisition of Dunbar Armored,0.7626703977584839,0.008354668524014564
+2015-02-17,SVVC,"Firsthand Technology Value Fund: Wide Discount, Too Much Risk",0.6772249341011047,-0.02040817521435445
+2016-05-25,XPP,Commodities At A Crossroads,0.6058175563812256,-0.00447755087205981
+2018-02-13,EWM,A Day Of Calm,0.7199544906616211,0.014442654633738172
+2016-05-05,ALL,Stock Indexes Sag South; Caterpillar Fails To Retake 50-Day Line,0.012256625108420849,-0.011345495293965113
+2018-07-16,HOG,2nd-Quarter 2018 Market Review And Commentary,0.9022276997566223,-0.006753401865117636
+2019-11-22,ACN,Infosys Ties Up With ARLANXEO to Aid Digital Transformation,-0.5813528299331665,0.008644190923294603
+2019-04-09,RSP,Are Stocks Cheap Or Expensive? Weekly Rant And The Week In Review 4-7-19,0.8494682312011719,0.004894001013265203
+2014-01-10,SCMP,Ironwood Up on Job Cut Plans - Analyst Blog,0.20863968133926392,0.11922659577312311
+2015-09-16,VTR,Taser's Core Business Is Good - Cramer's Lightning Round (9/15/15),0.887657880783081,0.01593946226197729
+2019-05-14,NG,5 Tariff-Proof Stocks to Own as Trade War Deepens,0.7836426496505737,0.00254452679221151
+2018-08-14,BEN,Tracking David Abrams' Abrams Capital Management Portfolio - Q2 2018 Update,0.9059058427810669,-0.002790819899256336
+2019-10-31,TZA,The Shifting State Of Yields,0.29490047693252563,-0.051400800468725416
+2015-05-19,LEN,Homebuilders' tails in the air after strong housing starts print,0.08683911710977554,0.0016432970931548052
+2016-01-07,CLMT,90-Day Dividend Investment Cycle Could Yield Near 20% For Calumet Specialty Products This Quarter,-0.34119221568107605,-0.003701684247465753
+2018-12-20,VYM,VYM: Can Investors Find Yield In Troubled Markets?,0.8229239583015442,-0.012496559571311017
+2012-07-25,MAS,Top 5 Must-Follow Earnings for Monday,0.8131391406059265,0.010835893293537291
+2019-04-17,BK,The Bank of New York Mellon Corporation 2019 Q1 - Results - Earnings Call Slides,0.8745386004447937,0.0012409264003236942
+2015-10-20,EL,"Krispy Kreme Doughnuts and Pizza Hut Satisfy the Hunger of Online Fans, While Offline Fans ...",0.4282881021499634,-0.00477639564238308
+2019-05-20,LPSN,LivePerson Inc. Is An Exciting Growth Company,-0.08704563975334167,0.019427764320211205
+2018-10-29,PCH,Potlatch (PCH) Misses Q3 Earnings and Revenue Estimates,0.18368449807167053,-0.01878106680102265
+2018-10-05,MTUM,"Jobs Report, Tech Woes, And Curve Steepeners: Thoughts On Friday",0.8643953800201416,-0.009279398227844404
+2015-03-02,EGO,Eldorado Gold Corp. Received Another Blow Today 'Ala Greek',-0.0940459817647934,-0.033519472330394096
+2015-09-14,ILMN,Tech Stocks Joining IBD 50: From Gaming To Gene Tests,0.8249658346176147,-0.0015046472983236692
+2018-02-16,SLF,"Equity Commonwealth, Sun Life Financial boosted to buy after reporting Q4 result",-0.7601645588874817,-0.007005713612989295
+2019-03-08,HSIC,Tracking Al Gore's Generation Investment Management Portfolio - Q4 2018 Update,0.9088209271430969,0.023220089080378647
+2016-12-07,EWI,Europe: Mourning And Markets,0.8568120002746582,-0.0029422311788657174
+2019-09-10,LAD,New Strong Buy Stocks for September 10th,0.8457247018814087,-0.022992735150463184
+2018-10-23,DLS,Sticking To The Short End (For Now),0.8078813552856445,-0.023718340005610794
+2020-02-12,VMBS,"Asset Planning Services, Ltd. Buys Vanguard Mortgage-Backed Securities ETF, SPDR Barclays ...",0.8274907469749451,0.0003741091221227677
+2019-01-28,ZBRA,Zebra Technologies to Acquire Temptime,0.8937109708786011,-0.008882946647128409
+2017-08-23,CACI,Raven (RAVN) Expands Portfolio With Colorado Lining Buyout,-0.7477356195449829,-0.0031884727478264097
+2018-06-07,MAC,Retiring With Higher Yields,0.19873124361038208,0.004759162819665486
+2015-03-02,MITL,Mitel to acquire Mavenir for $560M in cash and stock,0.8473015427589417,0.05050502996314177
+2020-05-18,CSCO,"EP Wealth Advisors, Inc. Buys Activision Blizzard Inc, Berkshire Hathaway Inc, Starbucks Corp, ...",0.8798279166221619,-0.009986291711928663
+2020-04-16,NCLH,"The Klein Law Firm Reminds Investors of Class Actions on Behalf of Shareholders of ALGN, MESA ...",0.3340946137905121,0.09074887210160743
+2019-08-22,AVT,What Makes Avnet (AVT) a Strong Sell?,0.7243144512176514,-0.04051161756848887
+2017-11-28,TRP,"Keystone pipe must run at 20% reduction after restart, regulator says",0.8057088851928711,-0.028807689151069127
+2018-08-02,TG,Tredegar declares $0.11 dividend,0.8720794320106506,0.07038797754414827
+2018-06-20,CCI,"Brasada Capital Management, Lp Buys SPDR Bloomberg Barclays –-' Month T-Bill, ONEOK Inc, ...",0.7779755592346191,0.003119696044892706
+2017-02-21,CYS,"Quick And Dirty mREIT Discounts For February 21st, 2017",0.901993453502655,-0.001285464898756472
+2019-07-10,FAST,Fastenal declares $0.22 dividend,0.8900378942489624,-0.02847984867932951
+2011-05-12,ITT,ITT Wins Indian Order - Analyst Blog,-0.21835216879844666,-0.010362851283873153
+2017-08-14,CP,Stocks Snap 3-Day Losing Streak,0.017668649554252625,0.0008372320230529695
+2018-06-05,ADP,Xerox Banks on Strategic Transformation Program & Buyouts,0.7523411512374878,0.015141177353715563
+2015-01-15,EPV,The Troubled Outlook For QE In Europe,0.28957170248031616,-0.02875939126915461
+2017-01-31,MAC,Identifying Equity REITs Worth Keeping Versus Those To Avoid Right Now - Part VII: Industrials,0.8517095446586609,-0.005532168455117503
+2020-05-14,THC,"Nut Tree Capital Management, LP Buys EPR Properties, HCA Healthcare Inc, Edison International, ...",0.8062677383422852,0.027544854099257554
+2014-01-31,LEDS,Weakness Seen in Applied Micro (AMCC): Stock Drops 8.2% - Tale of the Tape,0.010097319260239601,-0.05594406853597056
+2020-01-14,VEEV,Veeva Systems (VEEV) Dips More Than Broader Markets: What You Should Know,0.5538127422332764,-0.022668873536253797
+2020-03-23,IEP,Delek Gulps Poison Pill After Icahn Buys 14.8% of its Stake,0.7042666673660278,0.19916769196829787
+2015-02-03,OLN,FMC Corp. (FMC) Clinches Global Rights to Novel Herbicide - Analyst Blog,-0.5877137184143066,-0.01887553091331029
+2019-10-22,ZBRA,"Fenimore Asset Management Inc Buys Fastenal Co, Zebra Technologies Corp, Monro Inc, Sells CDW ...",0.8524925112724304,0.01770872262486911
+2015-12-15,ZOES,The Vetr community has downgraded $ZOES to 4-Stars,0.026795290410518646,0.026692761084027294
+2018-01-10,PRGO,Perrigo (PRGO) Presents At 36th Annual J.P. Morgan Healthcare Conference - Slideshow,0.8826209306716919,0.02120321909315881
+2017-11-02,DXCM,"DexCom (DXCM) Q3 Loss Narrower Than Expected, Revenues Meet",-0.14625079929828644,0.02933775514184722
+2014-02-11,TRIP,Stocks Hold Near Highs In Strong Session; Regeneron Soars,-0.8608980178833008,0.0720902750054564
+2015-03-02,AVA,Zacks Rank #1 Additions for Monday - Tale of the Tape,-0.1982760727405548,0.011757717003829216
+2019-10-21,FDX,"Excalibur Management Corp Buys FedEx Corp, Royal Dutch Shell PLC, Hewlett Packard Enterprise ...",0.722331166267395,0.01703508598853376
+2017-08-14,H,Will Airbnb Be the Next Tech Unicorn to IPO in 2017?,0.8886979818344116,-0.002978991632322958
+2017-12-19,ASH,Biotech Bonanza: Biotech Stocks To Keep Shining In 2018,-0.2130613625049591,0.0021210267985518616
+2018-10-18,AGQ,Silver Has Not Responded To Gold - Yet,0.6122380495071411,0.006297213285139769
+2018-07-09,MAN,Invesco S&P International Developed Low Volatility ETF (IDLV) June Summary,-0.8650550842285156,-0.03203406319802815
+2012-03-07,PLCE,Stock Futures Gain on U.S. Job Gains,-0.2792564928531647,0.016999419837220087
+2015-08-19,SJM,Credit Suisse sees upside for J.M. Smucker,-0.1699155569076538,-0.0010724502398120617
+2018-01-24,WAT,Sequoia Fund Q4 2017 Investor Letter,0.8925895690917969,0.013579111622348261
+2016-01-08,DD,"Stocks Punch Higher On Jobs Data; Early Risers: Alcoa, Cisco, Rovi",-0.8888762593269348,-0.01901474114967272
+2020-04-23,AL,"Old Dominion's (ODFL) Q1 Earnings In Line, Revenues Lag",-0.0006329510360956192,0.022354743563443913
+2016-05-16,SRNE,Premarket Gainers / Losers as of 9:10 am,0.77750164270401,-0.03333330154418945
+2018-04-02,SJM,"Dividend Growth 50: Not Perfect, But Yet Another 8% Raise",-0.9011041522026062,0.016281367903305366
+2019-05-21,VALE,"Vale mining dam may have 15% chance of bursting, official says",0.6362584829330444,0.0034159415487267086
+2015-04-17,COBZ,CoBiz's (COBZ) CEO Steve Bangert on Q1 2015 Results - Earnings Call Transcript,0.8860858082771301,0.01486386621874991
+2017-12-28,VRA,Holiday Sales At 6-Year High: Best Consumer ETFs & Stocks,0.5465313196182251,-0.005714260801977011
+2020-03-10,AON,"SHAREHOLDER ALERT: WeissLaw LLP Investigates Willis Towers Watson, Plc",0.9043959379196167,0.010267406497291853
+2015-01-30,ARR,ARMOUR Needs To Quit Defensive Approach,0.7987445592880249,-0.06042343967971742
+2019-02-20,HSY,Hershey backs 2019 guidance at CAGNY,0.7652721405029297,0.011295268304291284
+2019-08-26,HAS,Wall Street Rebounds Monday,0.09672823548316956,0.0005601330060296394
+2020-01-29,KEY,"Cornell Pochily Investment Advisors, Inc. ...",0.8909266591072083,0.010593298845634092
+2018-07-19,BK,The Bank of New York Mellon Corporation (BK) CEO Charlie Scharf on Q2 2018 Results - Earnings Call Transcript,0.8678492903709412,-0.005120262000995912
+2019-09-10,RSP,5 Lévy Flights And Counting For The S&P 500 In 2019,0.8926810026168823,0.0076351904494091904
+2018-09-21,OLED,Universal Display Sees Relative Strength Rating Climb To 75,-0.9220626950263977,0.0016470091076685733
+2016-02-16,PTC,PTC paying over $28M to settle Chinese bribery probes,0.27117571234703064,0.03558968817844477
+2016-03-09,ALL,Aristocrat and VGT Help Tribal Operators Make the Big Play in Class II and Class III at NIGA 2016,0.056809812784194946,-0.004184339317236385
+2016-01-11,IEO,Crude Oil: A Casualty Of War,0.5513306260108948,-0.007659516921298737
+2015-03-31,OMC,"WPP's Xaxis Buys ActionX, Expands E-Commerce Footprint - Analyst Blog",-0.05479854345321655,-0.00384721493583029
+2019-10-17,A,Parnassus Endeavor Fund Buys 4 Stocks in 'rd Quarter,-0.27770528197288513,-0.004671576047501347
+2019-02-25,TAP,Reasons Why I Don't Invest In Kraft Heinz Or Anheuser-Busch For My Dividend Growth Portfolio,0.8821192383766174,0.0
+2012-10-16,FAST,"Grainger Misses, Lowers Outlook On Sluggish Economy",0.03104429319500923,0.011575603774842236
+2015-08-10,MNKD,MannKind beats by $0.01,0.08337321877479553,0.029702893636613048
+2015-10-16,BDX,Dividend Champions: 24 Increases Expected By The End Of December,0.2862066626548767,0.002794550130088558
+2017-02-16,WCN,"BlueCrest Capital Management Ltd Buys Waste Connections, Petroleo Brasileiro SA Petrobras, ...",0.8162838220596313,0.010027733591203791
+2019-03-13,KEY,10 Best Dividend Paying Stocks For The Enterprising Investor – March 2019,0.4321037232875824,0.005773655070351769
+2012-12-20,PII,Industry Themes: Top Stocks Residing In Weak Groups,0.022609606385231018,-0.003897087055379278
+2018-10-29,MOH,Can Healthy Top-Line Growth Aid Ribbon's (RBBN) Q3 Earnings?,0.06369078159332275,0.009468787346886387
+2019-04-18,MAS,Top-Rated Stocks Near Buy Point Ahead Of Earnings: Masco,0.7493605613708496,-0.008491616078996955
+2019-02-07,ADC,Brighthouse Financial (BHF) Q4 Earnings: What to Expect,0.8945514559745789,0.008789605779071286
+2019-12-10,ILMN,What I've Learned In 4 Years Of Trying To Beat The S&P 500,0.4724239706993103,-0.01948371097394852
+2012-06-27,FLR,Two More Contracts for Jacobs - Analyst Blog,0.5039564371109009,0.025021105837495394
+2018-09-11,URBN,"Casey's (CASY) Q1 Earnings Beat Estimates, Sales Up Y/Y",-0.9309744834899902,-0.010731042860465223
+2016-08-02,AFAM,Notable earnings before Wednesday's open,-0.7724141478538513,0.02932254315327909
+2016-08-18,ADI,Analog Devices Expected To Add $100 Million-Plus In Apple iPhone 7 Sales,-0.7773987650871277,0.00015610083385819706
+2018-04-23,ASA,"Gold slips to two-week low amid rising U.S. yields, dollar",0.014307770878076553,0.007483650197127156
+2018-01-30,GLMD,"ROTY Edition 1 Volume 74: A New Feature For Readers, Updates And Trades",0.8554105758666992,0.00402418591475584
+2014-06-30,PANW,"Stocks Mixed In Late Trade, But Growth Stocks Outperform",-0.2627083957195282,-0.018962456965234353
+2017-02-10,MLM,Wall Street Breakfast: Reckitt Benckiser Takes Some Baby Steps,0.8266468048095703,0.004645613523952319
+2014-11-19,IPWR,Ideal Power to Present at the Southwest IDEAS Investor Conference on November 20th,0.5975566506385803,0.0
+2017-06-15,KWEB,"Bear Emerges As Techs Sell Off, But These 2 Sectors See Gains",-0.2279893010854721,0.0016965442287937282
+2017-01-05,SYY,My K.I.S.S. Dividend Portfolio: 4th Quarter 2016 Update,0.9052495956420898,0.007092258723458089
+2013-02-06,AGEN,Zacks Rank #1 Addition for Wednesday - Tale of the Tape,-0.35472536087036133,0.004115208234287682
+2019-12-03,AON,Why Tiffany Was Our Top Name Last Week,0.9059992432594299,0.01110068579303558
+2016-01-25,JCI,Johnson Controls (JCI) Slides on Tyco Talks,0.034647829830646515,-0.004978105637127195
+2017-09-28,MPWR,Stocks Flashing Renewed Technical Strength: Monolithic Power Systems,-0.501459538936615,0.001127178416810315
+2018-04-23,WRB,Notable earnings after Tuesday's close,-0.8572645783424377,-0.004953884437890466
+2015-04-16,SOHU,"Notable tech gainers/decliners: YY, SOHU, ANGI, ACTG, IGT, VSLR, CSLT",0.40565603971481323,-0.026683421556566556
+2015-12-10,MSI,"Taser Stays Focused, Racking Up 1,000 Camera Orders",-0.43714818358421326,-0.005075910431225461
+2020-04-27,FCAP,"First Capital, Inc. Reports Quarterly Earnings",0.739280641078949,-0.021956135296963053
+2011-02-01,HP,Energy Stocks Continue to Ride Perfect Storm,-0.8979629874229431,0.0013562187021403105
+2015-10-06,FDN,"Cloud Computing ETF Aims For The SKYY, But Misses",0.8663845062255859,0.011853132281106182
+2018-10-02,GPRE,European And Asian Value Ideas - The Idea Guide,0.8891170620918274,0.03846153846153855
+2019-05-07,AGNC,Annaly and AGNC Investment see buying as market tanks,0.725188672542572,-0.006818389370626066
+2019-03-12,CMTL,Motorola Expands Public Safety and Commercial Portfolio,0.15575680136680603,0.017233880082422326
+2019-07-25,AFL,This is Why Aflac (AFL) is a Great Dividend Stock,0.7449049353599548,0.0022317119718042733
+2016-02-19,MERC,"InsiderInsights.com Daily Round Up 2/18/16: REGN, NMFC, ENH, MERC",0.881613552570343,0.05512804791575454
+2018-06-05,YANG,Political Event Risk Raises Stakes For Sudden Price Moves,0.6241897940635681,-0.04079372165044959
+2013-10-23,PF,"Lorillard Beats Q3 Earnings, Sales Estimates - Analyst Blog",0.8155028820037842,-0.003632543595205262
+2017-11-28,MOS,Top Ranked Income Stocks to Buy for November 28th,0.8305366039276123,0.012453029162704521
+2016-12-19,KMX,Game Plan For The Week - Cramer's Mad Money (12/16/16),0.9040076732635498,0.06093654609629717
+2014-06-10,SYY,Balanced View on Sysco Corp. - Analyst Blog,0.7946961522102356,-0.003965337475105302
+2019-11-15,NMM,Dry freight index retreats again,0.01483279187232256,-0.0005484190963376268
+2016-01-05,WPC,2015 Year-End Retirement Income Portfolio Review,0.9082762598991394,0.009504608531266001
+2019-05-08,XLU,"San Francisco Sentry Investment Group (ca) Buys SPDR Select Sector Fund - Energy Select Sector, ...",0.5394731760025024,-0.0012276502499879438
+2018-11-01,MDT,United Therapeutics (UTHR) Q3 Earnings Beat but Stock Dips,-0.06347987055778503,-0.0014202032393236808
+2015-06-24,IDU,iShares U.S. Utilities ETF announces $1.0552 distribution,0.6646137833595276,-0.007158342189160449
+2013-12-30,KNDI,Kandi Stock Surges 48% In 2 Days On Sales Outlook,-0.8898674845695496,-0.013389108783755543
+2018-05-16,MTB,Tracking Warren Buffett's Berkshire Hathaway Portfolio - Q1 2018 Update,0.9190397262573242,-5.387897081710058e-05
+2014-12-04,BIO,"Affymetrix, Binding Site Group Ink Distribution Deal - Analyst Blog",0.8807013034820557,-0.004798558930049213
+2013-01-31,GME,GameStop Is Near a Key Resistance Area,-0.7378566265106201,0.06422397234525845
+2018-06-07,TVIX,Market Volatility Bulletin: Vol Does Its Best June '17 Impression... Can It Keep Up The Act?,0.7005836963653564,-0.018055527298538765
+2013-05-14,MOH,Select Medical Prices Senior Notes - Analyst Blog,0.9087611436843872,0.0050172285916352255
+2020-03-10,KBH,Is KB Home (KBH) a Profitable Stock for Value Investors Now?,0.7949647307395935,-0.09389833636954015
+2019-09-17,SM,Energy stocks dive as crude oil plunges,0.023669935762882233,0.0212150851313051
+2019-05-08,GILD,"Fragasso Group Inc. Buys iShares Core S&P 5……, Vanguard Mid-Cap, Hilton Worldwide ...",0.6339523792266846,0.0009081419202174867
+2014-01-16,DECK,Nordstrom Plans 6th Canadian Store - Analyst Blog,0.8401288986206055,-0.008327789667716634
