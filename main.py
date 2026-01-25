@@ -17,8 +17,10 @@ Optional:
    --shap_text "some text to explain"
    --no_shap   (skip SHAP)
 """
+
 import os
 os.environ["TRANSFORMERS_NO_TORCHVISION"] = "1"
+
 import argparse
 import sys
 from typing import List, Tuple
@@ -34,7 +36,6 @@ from sklearn.metrics import r2_score, mean_squared_error
 import yfinance as yf
 
 # NLP
-
 import torch
 from transformers import AutoTokenizer, AutoModelForSequenceClassification
 
@@ -127,23 +128,43 @@ def get_next_day_return(ticker: str, date_str: str) -> float:
     end = pd.to_datetime(d) + pd.Timedelta(days=7)
 
     df = yf.download(ticker, start=start, end=end, progress=False)
-    if df.empty:
+    if df is None or df.empty:
         return np.nan
 
     df = df.reset_index()
     df["Date"] = pd.to_datetime(df["Date"]).dt.date
 
-    if d not in set(df["Date"]):
+    # --- Get a 1D close series robustly (works with MultiIndex columns) ---
+    if isinstance(df.columns, pd.MultiIndex):
+        # try common patterns: ("Close", <ticker>) or ("Close", "")
+        close_series = None
+        for col in df.columns:
+            if col[0] == "Close":
+                close_series = df[col]
+                break
+        if close_series is None:
+            return np.nan
+    else:
+        if "Close" not in df.columns:
+            return np.nan
+        close_series = df["Close"]
+
+    # Ensure close_series is 1D numeric series
+    close_series = pd.to_numeric(close_series.squeeze(), errors="coerce")
+
+    # Find row position for the given date
+    matches = np.where(df["Date"].to_numpy() == d)[0]
+    if matches.size == 0:
         return np.nan
 
-    idx = df.index[df["Date"] == d][0]
-    if idx + 1 >= len(df):
+    pos = int(matches[0])
+    if pos + 1 >= len(df):
         return np.nan
 
-    close_today = float(df.loc[idx, "Close"])
-    close_next = float(df.loc[idx + 1, "Close"])
+    close_today = float(close_series.iloc[pos])
+    close_next = float(close_series.iloc[pos + 1])
 
-    if close_today == 0:
+    if not np.isfinite(close_today) or not np.isfinite(close_next) or close_today == 0:
         return np.nan
 
     return (close_next / close_today) - 1.0
@@ -178,7 +199,6 @@ def load_news_csv(path: str) -> pd.DataFrame:
     df["ticker"] = df["ticker"].astype(str)
     df["headline"] = df["headline"].astype(str)
     return df
-
 
 
 # -----------------------------
@@ -239,7 +259,7 @@ def run_pipeline(args):
         pred = reg.predict(X)
 
         r2 = r2_score(y, pred)
-        rmse = mean_squared_error(y, pred, squared=False)
+        rmse = float(np.sqrt(mean_squared_error(y, pred)))
 
         print("\n=== Regression: next_day_return ~ sent_score ===")
         print(f"n = {len(df)}")
@@ -252,26 +272,24 @@ def run_pipeline(args):
     if not args.no_shap:
         shap_text = args.shap_text
         if shap_text is None:
-            # default: explain the most negative/positive example by sent_score magnitude
             shap_text = news.iloc[int(np.argmax(np.abs(news["sent_score"].values)))]["headline"]
+
+        shap_text = str(shap_text)
 
         print("\nRunning SHAP text explanation for:")
         print(f"  {shap_text}")
+        print("(If you're running in a terminal, the SHAP text plot may not render; fallback will print tokens.)")
 
         def f(texts):
+            texts = [str(t) for t in texts]
             return predict_proba_texts(texts, tokenizer, model, max_length=args.maxlen)
 
         explainer = shap.Explainer(f, shap.maskers.Text(tokenizer))
         shap_values = explainer([shap_text])
 
-        # If you run in a notebook, shap.plots.text(shap_values[0]) will render nicely.
-        # In a terminal, we print token-level contributions approximately.
         try:
-            # Notebook-friendly (may not render in terminal)
             shap.plots.text(shap_values[0])
         except Exception:
-            # Fallback: print tokens + values for the POSITIVE class explanation
-            # shap_values.values shape: (1, tokens, classes)
             tokens = shap_values.data[0]
             vals = shap_values.values[0, :, 2]  # positive class contributions
             top = np.argsort(np.abs(vals))[::-1][:10]
@@ -280,6 +298,7 @@ def run_pipeline(args):
                 print(f"  {tokens[i]!r}: {vals[i]:+.4f}")
 
     print("\nDone.")
+
 
 
 def parse_args():
