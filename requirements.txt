@@ -1,0 +1,14 @@
+# Part 1: Sentiment and return regression
+numpy>=1.21.0
+pandas>=1.3.0
+scikit-learn>=1.0.0
+yfinance>=0.2.0
+torch>=1.10.0
+transformers>=4.20.0
+shap>=0.40.0
+
+# Data pipeline (datasplit.py)
+datasets>=2.0.0
+
+# Part 2: LOB + sentiment (optional; only for fusion/models/DeepLob/deeplob_sentiment.py Lightning training)
+pytorch-lightning>=1.6.0
