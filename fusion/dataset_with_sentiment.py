@@ -1,55 +1,96 @@
 """
-Example wrapper: LOBFrame CustomDataset + precomputed sentiment vectors.
+LOB dataset + sentiment from Part 1 CSV.
 
-Use this when you have:
-  - LOBFrame's CustomDataset (or a .pt saved dataset) that returns (lob_tensor, label).
-  - A .npz file from bridge_sentiment_to_lob.py with key "sentiment_vectors", shape (N, dim).
-    (Sentiment can be produced from ParentPaper-style CSVs without modifying ParentPaper.)
+Use when you have:
+  - An LOB dataset that returns (lob_tensor, label).
+  - Part 1 CSV (main.py or datasplit output) with sent_score and optionally
+    sent_probs_neg, sent_probs_neu, sent_probs_pos.
 
-We assume the same ordering and length: sample index i in the LOB dataset corresponds to
-row i in the sentiment file (e.g. you built both from the same time-ordered data).
+Sentiment is built from CSV columns: (N, 1) from sent_score or (N, 3) from probs.
+LOB and CSV rows are aligned by index (same order).
 """
 
 from __future__ import annotations
 
+from typing import List
+
+import pandas as pd
 import torch
 from torch.utils.data import Dataset
 
 
+def sentiment_columns_from_csv(
+    df: pd.DataFrame,
+    use_probs: bool = False,
+) -> tuple[torch.Tensor, int]:
+    """
+    Build sentiment tensor from Part 1 CSV columns.
+
+    Args:
+        df: DataFrame with at least sent_score; optionally sent_probs_neg, sent_probs_neu, sent_probs_pos.
+        use_probs: If True and prob columns exist, return (N, 3) and sentiment_dim=3.
+
+    Returns:
+        sentiment: (N, 1) or (N, 3) float32 tensor
+        sentiment_dim: 1 or 3
+    """
+    if "sent_score" not in df.columns:
+        raise ValueError(f"DataFrame must have 'sent_score'. Columns: {list(df.columns)}")
+    if use_probs:
+        prob_cols = ["sent_probs_neg", "sent_probs_neu", "sent_probs_pos"]
+        if all(c in df.columns for c in prob_cols):
+            arr = df[prob_cols].astype("float32").values
+            return torch.tensor(arr, dtype=torch.float32), 3
+    arr = df["sent_score"].astype("float32").values.reshape(-1, 1)
+    return torch.tensor(arr, dtype=torch.float32), 1
+
+
 class LOBWithSentimentDataset(Dataset):
     """
-    Wraps an LOB dataset and a (N, sentiment_dim) tensor so that __getitem__ returns
-    (lob_tensor, sentiment_tensor, label).
+    Wraps an LOB dataset and sentiment from Part 1 DataFrame/CSV.
+    __getitem__ returns (lob_tensor, sentiment_tensor, label).
+    Sentiment is (1,) or (3,) per sample from sent_score or sent_probs.
     """
 
     def __init__(
         self,
         lob_dataset: Dataset,
-        sentiment_vectors: torch.Tensor | None = None,
-        sentiment_npz_path: str | None = None,
+        sentiment_df: pd.DataFrame | None = None,
+        sentiment_csv_path: str | None = None,
+        sentiment_columns: List[str] | None = None,
+        use_probs: bool = False,
     ):
         """
         Args:
-            lob_dataset: Any Dataset that returns (lob, label) in __getitem__.
-            sentiment_vectors: (N, sentiment_dim) tensor; optional if sentiment_npz_path given.
-            sentiment_npz_path: Path to .npz with key "sentiment_vectors". Loaded if sentiment_vectors is None.
+            lob_dataset: Dataset that returns (lob, label) in __getitem__.
+            sentiment_df: Part 1 DataFrame (must have sent_score; optionally sent_probs_*).
+            sentiment_csv_path: Path to Part 1 CSV; used if sentiment_df is None.
+            sentiment_columns: Optional explicit list, e.g. ["sent_score"] or
+                ["sent_probs_neg","sent_probs_neu","sent_probs_pos"]. If None, inferred from use_probs.
+            use_probs: If True, use 3-d probs when available.
         """
         self.lob_dataset = lob_dataset
-        if sentiment_vectors is not None:
-            self.sentiment = sentiment_vectors
-        elif sentiment_npz_path is not None:
-            import numpy as np
-            data = np.load(sentiment_npz_path)
-            self.sentiment = torch.tensor(data["sentiment_vectors"], dtype=torch.float32)
+        if sentiment_df is not None:
+            df = sentiment_df
+        elif sentiment_csv_path is not None:
+            df = pd.read_csv(sentiment_csv_path)
         else:
-            raise ValueError("Provide either sentiment_vectors or sentiment_npz_path")
+            raise ValueError("Provide either sentiment_df or sentiment_csv_path")
+
+        if sentiment_columns is not None:
+            if "sent_score" in sentiment_columns and len(sentiment_columns) == 1:
+                self.sentiment = torch.tensor(df["sent_score"].astype("float32").values.reshape(-1, 1), dtype=torch.float32)
+            else:
+                self.sentiment = torch.tensor(df[sentiment_columns].astype("float32").values, dtype=torch.float32)
+        else:
+            self.sentiment, _ = sentiment_columns_from_csv(df, use_probs=use_probs)
 
         n_lob = len(self.lob_dataset)
         n_sent = self.sentiment.shape[0]
         if n_lob != n_sent:
             raise ValueError(
-                f"LOB dataset length ({n_lob}) must match sentiment vectors length ({n_sent}). "
-                "Align by index or use align_sentiment_to_lob_indices() first."
+                f"LOB dataset length ({n_lob}) must match sentiment length ({n_sent}). "
+                "Align by index (same row order)."
             )
 
     def __len__(self) -> int:
@@ -62,17 +103,8 @@ class LOBWithSentimentDataset(Dataset):
 
 
 def collate_lob_sentiment(batch):
-    """Use as DataLoader collate_fn when batch is (lob, sentiment, label)."""
+    """DataLoader collate_fn when batch is (lob, sentiment, label)."""
     lobs = torch.stack([b[0] for b in batch])
     sents = torch.stack([b[1] for b in batch])
-    labels = torch.stack([b[2] for b in batch])
+    labels = torch.tensor([b[2] for b in batch], dtype=torch.long)
     return (lobs, sents), labels
-
-
-# Usage with Lightning:
-# In training_step: (inputs, targets) = batch
-#   if isinstance(inputs, tuple):
-#       lob, sentiment = inputs
-#       logits = self.model(lob, sentiment=sentiment)
-#   else:
-#       logits = self.model(inputs)
